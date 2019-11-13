@@ -44,7 +44,7 @@ render={data => (
               data-item-url={`/`}
             >
               <div className="Product__image">
-                <Img sizes={product.image.sizes} />
+                <Img sizes={product.image.sizes} />!!
               </div> <div className="Product__details">
                 <div className="Product__name">
                   {product.name}
