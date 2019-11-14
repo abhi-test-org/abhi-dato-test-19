@@ -7,7 +7,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query CatalogueQuery {
-        products: allDatoCmsProduct {
+        products: allDatoCmProduct {
           edges {
             node {
               id
@@ -33,7 +33,7 @@ render={data => (
   <Layout site={data.site}>
     <div className="Catalogue">
       {
-        data.proucts.edges.map(({ node: product }) => (
+        data.products.edges.map(({ node: product }) => (
           <div className="Catalogue__item" key={product.id}>
             <div
               className="Product snipcart-add-item"
